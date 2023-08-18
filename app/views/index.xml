@@ -6,18 +6,22 @@
 				<TableViewSection>
 					<HeaderView>
                 		<View height="20dp">
-							<Label color="#545454">My job and sponsor</Label>
+							<Label color="#545454">My job and sponsor</Label>		
+							<ImageView class="rowImage" image="https://strategic-blue.com/favicon.ico"/>	
 						</View>
             		</HeaderView>
-					<TableViewRow title="Strategic Blue" link="https://strategic-blue.com" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="Strategic Blue (AWS best rates)" link="https://strategic-blue.com" onClick="followLink">
+					</TableViewRow>
 				</TableViewSection>
 				<TableViewSection>
 					<HeaderView>
                 		<View height="20dp">
 							<Label color="#545454">Frank Contrepois</Label>
+							<ImageView class="rowImage" image="https://frankcontrepois.com/favicon.ico"/>
 						</View>
             		</HeaderView>
-					<TableViewRow title="Podcast" link="https://whatsnewincloudfinops.buzzsprout.com/" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="Podcast" link="https://whatsnewincloudfinops.buzzsprout.com/" onClick="followLink"> 
+					</TableViewRow>
 					<TableViewRow title="AWS Pricing investigations" link="https://observablehq.com/collection/@fcontrepois/aws-pricing-discovery" onClick="followLink"> </TableViewRow>
 					<TableViewRow title="My second brain" link="https://zt.frankcontrepois.com" onClick="followLink"> </TableViewRow>
 					<TableViewRow title="My website" link="https://frankcontrepois.com" onClick="followLink"> </TableViewRow>
@@ -26,6 +30,7 @@
 					<HeaderView>
                 		<View height="20dp">
 							<Label color="#545454">FinOps Foundation</Label>
+							<ImageView class="rowImage" image="https://www.finops.org/wp-content/themes/finops-foundation/favicon.ico?32"/>
 						</View>
             		</HeaderView>
 					<TableViewRow title="Main F2" link="https://finops.org" onClick="followLink"> </TableViewRow>
@@ -36,6 +41,7 @@
 					<HeaderView>
                 		<View height="20dp">
 							<Label color="#545454">AWS</Label>
+							<ImageView class="rowImage" image="https://aws.amazon.com/favicon.ico"/>
 						</View>
             		</HeaderView>
 					<TableViewRow title="AWS Pricing" link="https://aws.amazon.com/pricing/" onClick="followLink"> </TableViewRow>

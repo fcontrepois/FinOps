@@ -1,0 +1,47 @@
+<Alloy>
+	<NavigationWindow>
+		<Window class="container" title="FinOps links">
+			<TableView id="indexLinkTable" filterAttribute="title">
+			<SearchBar platform="android,ios"/>
+				<TableViewSection>
+					<HeaderView>
+                		<View height="20dp">
+							<Label color="#545454">My job and sponsor</Label>
+						</View>
+            		</HeaderView>
+					<TableViewRow title="Strategic Blue" link="https://strategic-blue.com" onClick="followLink"> </TableViewRow>
+				</TableViewSection>
+				<TableViewSection>
+					<HeaderView>
+                		<View height="20dp">
+							<Label color="#545454">Frank Contrepois</Label>
+						</View>
+            		</HeaderView>
+					<TableViewRow title="Podcast" link="https://whatsnewincloudfinops.buzzsprout.com/" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="AWS Pricing investigations" link="https://observablehq.com/collection/@fcontrepois/aws-pricing-discovery" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="My second brain" link="https://zt.frankcontrepois.com" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="My website" link="https://frankcontrepois.com" onClick="followLink"> </TableViewRow>
+				</TableViewSection>
+				<TableViewSection>
+					<HeaderView>
+                		<View height="20dp">
+							<Label color="#545454">FinOps Foundation</Label>
+						</View>
+            		</HeaderView>
+					<TableViewRow title="Main F2" link="https://finops.org" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="Get a grip on the framework" link="https://www.finops.org/framework/" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="Getting certified" link="https://learn.finops.org/" onClick="followLink"> </TableViewRow>
+				</TableViewSection>
+				<TableViewSection>
+					<HeaderView>
+                		<View height="20dp">
+							<Label color="#545454">AWS</Label>
+						</View>
+            		</HeaderView>
+					<TableViewRow title="AWS Pricing" link="https://aws.amazon.com/pricing/" onClick="followLink"> </TableViewRow>
+					<TableViewRow title="AWS pricing API" link="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html" onClick="followLink"> </TableViewRow>
+				</TableViewSection>
+			</TableView>
+		</Window>
+	</NavigationWindow>
+</Alloy>

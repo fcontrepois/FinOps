@@ -2,8 +2,8 @@
 <ti:app xmlns:ti="http://ti.appcelerator.org">
 	<id>com.frankcontrepois.finops</id>
 	<name>FinOps</name>
-	<version>1.0</version>
-	<publisher>nFrank Contrepois</publisher>
+	<version>0.1</version>
+	<publisher>Frank Contrepois</publisher>
 	<url/>
 	<description/>
 	<copyright>Frank Contrepois 2023</copyright>

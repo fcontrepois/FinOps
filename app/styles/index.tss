@@ -14,5 +14,11 @@
 	}
 }
 
+".rowImage": {
+    width: 30, // Adjust the width as needed
+    height: Ti.UI.SIZE, // Adjust the height as needed
+    right: 10, // Add some right margin
+}
+
 '#indexLinkTable': {
 }

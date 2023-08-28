@@ -22,3 +22,13 @@
 
 '#indexLinkTable': {
 }
+
+".header": {
+	color: "#545454",
+	fontWeight: "bold",
+}
+
+".footer": {
+	color: "#545454",
+	fontWeight: "bold" 
+}

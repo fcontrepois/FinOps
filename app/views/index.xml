@@ -1,8 +1,18 @@
 <Alloy>
 	<NavigationWindow>
 		<Window class="container" title="FinOps links">
-			<TableView id="indexLinkTable" filterAttribute="title" footerTitle="© Frank Contrepois 2023"  footerDividersEnabled="true">
+			<TableView id="indexLinkTable" filterAttribute="title">
 				<SearchBar platform="android,ios"/>
+				<FooterView>
+					<View height="25dp">
+						<Label class="footer">© 2023 - Frank Contrepois</Label>
+					</View>
+				</FooterView>
+				<HeaderView>
+					<View height="25dp">
+						<Label class="header">FinOps Links</Label>
+					</View>
+				</HeaderView>
 				<TableViewSection>
 					<HeaderView>
 						<View height="20dp">

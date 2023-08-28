@@ -1,35 +1,24 @@
-".container": {
-	backgroundColor:"black"
-}
-
+"Window": {
+	backgroundColor:"#000",
+},
 "Label": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "white"
-}
-
-"#label": {
-	font: {
-		fontSize: 12
-	}
-}
-
+	color: "black"
+},
 ".rowImage": {
     width: 30, // Adjust the width as needed
     height: Ti.UI.SIZE, // Adjust the height as needed
     right: 10,
 	bottom: 3, 
-}
-
-'#indexLinkTable': {
-}
-
+},
 ".header": {
-	color: "#545454",
-	fontWeight: "bold",
-}
-
+	color: "black",
+},
 ".footer": {
 	color: "#545454",
-	fontWeight: "bold" 
-}
+}, 
+".sectionHeaderView": {
+	color: "545454", 
+},
+

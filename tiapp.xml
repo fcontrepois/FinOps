@@ -45,6 +45,7 @@
 		</manifest>
 	</android>
 	<modules>
+		<module platform="iphone">ti.webdialog</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">false</target>

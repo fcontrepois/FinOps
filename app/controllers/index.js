@@ -1,6 +1,12 @@
 $.index.open();
 
+var dialog = require('ti.webdialog');
+
 function followLink(event){
     var selectUrl = event.source.link;
-    Ti.Platform.openURL(selectUrl);
+    if (dialog.isSupported()) {
+        dialog.open({
+            url: selectUrl
+        });
+    }
 }

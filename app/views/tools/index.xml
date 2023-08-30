@@ -1,0 +1,11 @@
+<Alloy>
+    <Tab title="Tools">
+        <Window id="window" title="FinOps Tools" onFocus="onFocus">
+            <ListView id="listView" onItemclick="openComponent">
+                <ListSection>
+					<ListItem title="Effective Saving Rate calculator" itemId="esr" />
+				</ListSection>
+			</ListView>
+		</Window>
+	</Tab>
+</Alloy>

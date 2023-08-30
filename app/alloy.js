@@ -9,3 +9,7 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+
+// Need to check if those are needed
+Alloy.CFG.tabGroup = {};
+Alloy.Globals.Map = require('ti.map');

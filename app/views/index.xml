@@ -1,5 +1,7 @@
 <Alloy>
 	<TabGroup>
+		<Require src="tools/index" />
 		<Require src="links/index" />
+		<Require src="console/index" />
 	</TabGroup>
 </Alloy>

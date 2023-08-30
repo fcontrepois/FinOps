@@ -1,0 +1,14 @@
+<Alloy>
+    <Window title="ESR Calc.">
+        <ScrollView id="textfieldsContainer">
+            <Label class="textLabel">ESR calculator</Label>
+             <View layout="horizontal" top="20">
+                <Label class="textLabel" text="Enter your on-demand equivalent spend" />
+                <TextField class="decimalValueInput" id="onDemandSpend" onChange="calculateEsr"  />
+                <Label class="textLabel" text="Enter your actual spend with discounts" />
+                <TextField class="decimalValueInput" id="actualSpend" onChange="calculateEsr" />
+                <Label id="calculatedEsr" text="The ESR will appear here"/>
+            </View>
+        </ScrollView>
+    </Window>
+</Alloy>

@@ -1,6 +1,6 @@
 <Alloy>
-    <Tab title="FinOps Links">
-        <Window id="window" title="FinOps Links" onFocus="onFocus">
+    <Tab title="Links">
+        <Window id="window" title="FinOps Links">
             <ListView id="listView" onItemclick="openUrl">
                 <ListSection>
 					<ListItem title="Strategic Blue (Get the best rates on AWS)" itemId="https://strategic-blue.com" />

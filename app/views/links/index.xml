@@ -1,0 +1,20 @@
+<Alloy>
+    <Tab title="FinOps Links">
+        <Window id="window" title="FinOps Links" onFocus="onFocus">
+            <ListView id="listView" onItemclick="openUrl">
+                <ListSection>
+					<ListItem title="Strategic Blue (Get the best rates on AWS)" itemId="https://strategic-blue.com" />
+					<ListItem title="Podcast" itemId="https://whatsnewincloudfinops.buzzsprout.com/"/>
+					<ListItem title="AWS Pricing investigations" itemId="https://observablehq.com/collection/@fcontrepois/aws-pricing-discovery"/>
+					<ListItem title="My second brain" itemId="https://zt.frankcontrepois.com"/>
+					<ListItem title="My website" itemId="https://frankcontrepois.com"/>
+					<ListItem title="Main F2" itemId="https://finops.org"/>
+					<ListItem title="Get a grip on the framework" itemId="https://www.finops.org/framework/"/>
+					<ListItem title="Getting certified" itemId="https://learn.finops.org/"/>
+					<ListItem title="AWS Pricing" itemId="https://aws.amazon.com/pricing/"/>
+					<ListItem title="AWS pricing API" itemId="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html"/>
+				</ListSection>
+			</ListView>
+		</Window>
+	</Tab>
+</Alloy>

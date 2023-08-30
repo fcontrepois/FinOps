@@ -1,8 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "FinOps",
-			"path": "../.."
-		}
-	]
+    "folders": [
+        {
+            "path": "../.."
+        }
+    ]
 }

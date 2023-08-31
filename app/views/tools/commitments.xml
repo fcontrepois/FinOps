@@ -1,25 +1,25 @@
 <Alloy>
     <Window title="Commitments info" onFocus="elaborateCommitment">
-        <ScrollView id="textfieldsContainer" backgroundColor="black">
+        <ScrollView id="textfieldsContainer">
             <Label class="textLabel">Commitment helper</Label>
             
-                <Label class="textLabel" text="Starting date"/>
-                <Picker
-                    id="datePicker"
-                    type="Ti.UI.PICKER_TYPE_DATE"
-                    datePickerStyle="Ti.UI.DATE_PICKER_STYLE_INLINE" 
-                    onChange="elaborateCommitment" />
-                
-                <Label class="textLabel" top="30" text="Number of months of the commitment:"/>
-                <TextField class="decimalValueInput" id="numberOfMonths" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment" value="12"/>
+            <Label class="textLabel" text="Starting date"/>
+            <Picker
+                id="datePicker"
+                type="Ti.UI.PICKER_TYPE_DATE"
+                datePickerStyle="Ti.UI.DATE_PICKER_STYLE_INLINE" 
+                onChange="elaborateCommitment" />
             
-                <Label class="textLabel" top="30" text="Full hourly rate (no discounts)"/>
-                <TextField class="decimalValueInput" id="listPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
-            
-                <Label class="textLabel" top="30" text="Discounted hourly rate"/>
-                <TextField class="decimalValueInput" id="discountedPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
+            <Label class="textLabel" top="30" text="Number of months of the commitment:"/>
+            <TextField class="decimalValueInput" id="numberOfMonths" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment" value="12"/>
+        
+            <Label class="textLabel" top="30" text="Full hourly rate (no discounts)"/>
+            <TextField class="decimalValueInput" id="listPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
+        
+            <Label class="textLabel" top="30" text="Discounted hourly rate"/>
+            <TextField class="decimalValueInput" id="discountedPrice" top="30" bottom="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
 
-            <ListView id="myListView"">
+            <ListView id="myListView" backgroundColor="black">
                 <Templates>
                     <ItemTemplate name="MyCustomTemplate">
                         <Label bindId="title" class="titleLabel" />

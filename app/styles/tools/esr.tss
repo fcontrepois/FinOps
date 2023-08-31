@@ -2,6 +2,10 @@
     layout: 'vertical'
 }
 
+'TextField':{
+    color: 'grey',
+}
+
 '.decimalValueInput[platform=ios]': {
     keyboardType: Ti.UI.KEYBOARD_TYPE_DECIMAL_PAD,
     hintText: 'Enter a positive decimal number',

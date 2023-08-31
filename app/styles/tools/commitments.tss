@@ -26,6 +26,38 @@
     },
     width: Ti.UI.SIZE,
     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-    top: 20,
-    width: 300
+    top: 5,
+}
+
+'#footnoteLabel[platform=ios]': {
+	font: {
+		textStyle: Ti.UI.TEXT_STYLE_FOOTNOTE
+	}
+}
+
+'.titleLabel': {
+	left: 15,
+	color: 'red'
+}
+
+'.detailLabel': {
+	right: 5,
+	color: 'green',
+	font: {
+		fontWeight: 'bold'	
+	}
+}
+
+// Apply custom margins for Android since the ListItem
+// behaves different natively
+'.titleLabel[platform=android]': {
+	left: 0
+}
+
+'.detailLabel[platform=android]': {
+	right: 25
+}
+
+'ListItem':{
+    accessoryType: "Ti.UI.LIST_ACCESSORY_TYPE_NONE"
 }

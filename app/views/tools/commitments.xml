@@ -1,45 +1,35 @@
 <Alloy>
     <Window title="Commitments info" onFocus="elaborateCommitment">
-        <ScrollView layout="vertical" height="Ti.UI.SIZE">
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">    
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Starting date:"/>
-                <Picker id="datePicker" type="Ti.UI.PICKER_TYPE_DATE" datePickerStyle="Ti.UI.DATE_PICKER_STYLE_COMPACT" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Commitment start date" onChange="elaborateCommitment"/>
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Number of months of the commitment:"/>
+        <ScrollView id="textfieldsContainer">
+            <Label class="textLabel">Commitment helper</Label>
+            
+                <Label class="textLabel" text="Starting date"/>
+                <Picker
+                    id="datePicker"
+                    type="Ti.UI.PICKER_TYPE_DATE"
+                    datePickerStyle="Ti.UI.DATE_PICKER_STYLE_INLINE" 
+                    onChange="elaborateCommitment" />
+                
+                <Label class="textLabel" top="30" text="Number of months of the commitment:"/>
                 <TextField class="decimalValueInput" id="numberOfMonths" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment" value="12"/>
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Hourly list rate:"/>
+            
+                <Label class="textLabel" top="30" text="Full hourly rate (no discounts)"/>
                 <TextField class="decimalValueInput" id="listPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">    
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Hourly discounted rate:"/>
+            
+                <Label class="textLabel" top="30" text="Discounted hourly rate"/>
                 <TextField class="decimalValueInput" id="discountedPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
-            </View>
 
-
-
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Discount:"/>
-                <Label id="discountLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER"/>
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Duration in Hours:"/>
-                <Label id="durationLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Total saved (no wastage):"/>
-                <Label id="totalsavedLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER"/>
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="End date:"/>
-                <Label id="endDateLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-            </View>
-            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
-                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Breakeven date:"/>
-                <Label id="breakevenLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
-            </View>
+            <ListView id="myListView">
+                <Templates>
+                    <ItemTemplate name="MyCustomTemplate">
+                        <Label bindId="title" class="titleLabel" />
+                        <Label bindId="detail" class="detailLabel" />
+                    </ItemTemplate>
+                </Templates>
+                
+                <ListSection headerTitle="Results" name="results"/>
+            </ListView>
         </ScrollView>
+        <Label id="footnoteLabel" platform="ios" bottom="20">2023 Frank Contrepois</Label>
     </Window>
 </Alloy>

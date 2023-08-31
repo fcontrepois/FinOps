@@ -11,31 +11,41 @@ function elaborateCommitment() {
     const discountInPc = calculateCommitmentDiscount(listPrice, discountedPrice);
     const breakevenDate = calculateBreakevenDate(discountInPc, startDate, hoursDifference)
 
-    if (isNaN(hoursDifference)) {
-        $.durationLabel.text = "";
-    } else {
-        $.durationLabel.text = `${hoursDifference}`;
+var items = [];
+
+
+    if (!isNaN(hoursDifference)) {
+        items.push({
+            title: {text: "Committed hours"},
+            detail: {text: hoursDifference},
+            template: "MyCustomTemplate"
+         })
     }
 
-    if (isNaN(discountInPc)){
-        $.discountLabel.text = "";
-    }else{
-        $.discountLabel.text = `${discountInPc * 100}%`;
+    if (!isNaN(discountInPc)){
+        items.push({
+            title: {text: "Discount in %"},
+            detail: {text: `${discountInPc * 100}%`},
+            template: "MyCustomTemplate"
+         })
+    }
+        
+    if(!isInvalidDate(endDate)){
+        items.push({
+            title: {text: "End of commitment"},
+            detail: {text: `${endDate.toISOString().split('T')[0]}`},
+            template: "MyCustomTemplate"
+         })
     }
 
-    if(isInvalidDate(endDate)){
-        $.endDateLabel.text = "";
-    }else{
-        $.endDateLabel.text = `${endDate}`;
+    if(!isInvalidDate(breakevenDate) || (discountInPc<=0)){
+        items.push({
+            title: {text: "Breakeven date"},
+            detail: {text: `${breakevenDate.toISOString().split('T')[0]}`},
+            template: "MyCustomTemplate"
+         })
     }
-
-    if(isInvalidDate(breakevenDate) || (discountInPc<=0)){
-        $.breakevenLabel.text = "Infinite";
-    }else{
-        $.breakevenLabel.text = `${breakevenDate}`;
-    }
-
-    $.totalsavedLabel.text = "";
+    $.myListView.sections[0].setItems(items);
 }
 
 function calculateCommitmentDiscount(listPrice, discountedPrice) {

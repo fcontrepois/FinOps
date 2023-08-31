@@ -19,8 +19,6 @@
     }
 }
 
-
-
 '.textLabel': {
     font: {
         fontSize: 14,
@@ -31,8 +29,6 @@
     top: 20,
     width: 300
 }
-
-
 
 "#calculatedEsr":{
     font: {

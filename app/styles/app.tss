@@ -1,5 +1,5 @@
 'Window[platform=ios]': {
-	backgroundColor: 'white',
+	backgroundColor: 'black',
 	barColor: Alloy.CFG.styles.tintColor,
 	navTintColor: 'white',
 	translucent: false,
@@ -17,10 +17,6 @@
 	activeTabIconTint: Alloy.CFG.styles.tintColor,
 	translucent: false,
 	backgroundColor: 'white',
-}
-
-'Tab': {
-	icon: '/images/icons/tab.png'
 }
 
 'ListItem': {

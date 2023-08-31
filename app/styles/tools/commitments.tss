@@ -59,5 +59,6 @@
 }
 
 'ListItem':{
-    accessoryType: "Ti.UI.LIST_ACCESSORY_TYPE_NONE"
+    accessoryType: "Ti.UI.LIST_ACCESSORY_TYPE_NONE",
+    backgroundColor: "black"
 }

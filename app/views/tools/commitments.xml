@@ -1,6 +1,6 @@
 <Alloy>
     <Window title="Commitments info" onFocus="elaborateCommitment">
-        <ScrollView id="textfieldsContainer">
+        <ScrollView id="textfieldsContainer" backgroundColor="black">
             <Label class="textLabel">Commitment helper</Label>
             
                 <Label class="textLabel" text="Starting date"/>
@@ -19,7 +19,7 @@
                 <Label class="textLabel" top="30" text="Discounted hourly rate"/>
                 <TextField class="decimalValueInput" id="discountedPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
 
-            <ListView id="myListView">
+            <ListView id="myListView"">
                 <Templates>
                     <ItemTemplate name="MyCustomTemplate">
                         <Label bindId="title" class="titleLabel" />

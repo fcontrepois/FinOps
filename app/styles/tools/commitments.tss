@@ -1,0 +1,31 @@
+'#textfieldsContainer': {
+    layout: 'vertical'
+}
+
+'.decimalValueInput[platform=ios]': {
+    keyboardType: Ti.UI.KEYBOARD_TYPE_DECIMAL_PAD,
+    hintText: 'Enter a positive decimal number',
+    width: 300,
+    top: 10,
+    bubbleParent: false,
+    height: 40,
+    backgroundColor: '#f0f0f0',
+    borderRadius: 4,
+    padding: {
+        left: 20,
+        right: 20,
+        top: 5,
+        bottom: 5
+    }
+}
+
+'.textLabel': {
+    font: {
+        fontSize: 14,
+        fontWeight: 'bold'
+    },
+    width: Ti.UI.SIZE,
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    top: 20,
+    width: 300
+}

@@ -1,6 +1,6 @@
 <Alloy>
     <Window title="Commitments info" onFocus="elaborateCommitment">
-        <View layout="vertical" height="Ti.UI.SIZE">
+        <ScrollView layout="vertical" height="Ti.UI.SIZE">
             <View layout="horizontal" height="Ti.UI.SIZE" left="30">    
                 <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Starting date:"/>
                 <Picker id="datePicker" type="Ti.UI.PICKER_TYPE_DATE" datePickerStyle="Ti.UI.DATE_PICKER_STYLE_COMPACT" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Commitment start date" onChange="elaborateCommitment"/>
@@ -40,6 +40,6 @@
                 <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Breakeven date:"/>
                 <Label id="breakevenLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
             </View>
-        </View>
+        </ScrollView>
     </Window>
 </Alloy>

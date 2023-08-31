@@ -1,5 +1,5 @@
 <Alloy>
-    <Window title="ESR Calc.">
+    <Window title="Effective Saving Rate">
         <ScrollView id="textfieldsContainer">
             <Label class="textLabel">ESR calculator</Label>
              <View layout="horizontal" top="20">

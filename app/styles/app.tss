@@ -1,14 +1,58 @@
-/*
+'Window[platform=ios]': {
+	backgroundColor: 'white',
+	barColor: Alloy.CFG.styles.tintColor,
+	navTintColor: 'white',
+	translucent: false,
+	backButtonTitle: '',
+	titleAttributes: {
+		color: 'white',
+	}
+}
 
-This is your global styles file. Selectors and rules you define
-here will be applied throughout your app. However, these rules
-have the lowest priority of any style settings.
+'Window[platform=android]': {
+	softKeyboardOnFocus: Ti.UI.Android.SOFT_KEYBOARD_SHOW_ON_FOCUS
+}
 
-For more information, see the "Style Priorities" section of
-http://docs.appcelerator.com/platform/latest/#!/guide/Alloy_Styles_and_Themes
+'TabGroup[platform=ios]': {
+	activeTabIconTint: Alloy.CFG.styles.tintColor,
+	translucent: false,
+	backgroundColor: 'white',
+}
 
-For example, the following would apply to all labels, windows,
-and text fields (depending on platform) in your app unless you
-overrode the settings with other TSS, XML, or JS settings:
+'Tab': {
+	icon: '/images/icons/tab.png'
+}
 
-*/
+'ListItem': {
+	accessoryType: Ti.UI.LIST_ACCESSORY_TYPE_DISCLOSURE,
+	subtitleColor: '#777' // Titanium 6.1.0 and later
+}
+
+'.actionButton': {
+	width: 300,
+	height: 40,
+	tintColor: 'white',
+	borderRadius: 4,
+	backgroundColor: Alloy.CFG.styles.tintColor,
+	color: 'white'
+}
+
+'.stateLabel': {
+	top: 100,
+	left: 20,
+	right: 20,
+	width: Ti.UI.FILL,
+	textAlign: 'center',
+	font: {
+		fontSize: 15
+	}
+}
+
+'.placeholderLabel': {
+	width: 250,
+	height: 125,
+	color: '#333',
+	backgroundColor: '#eee',
+	borderRadius: 4,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+}

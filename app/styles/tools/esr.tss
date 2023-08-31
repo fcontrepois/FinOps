@@ -2,29 +2,13 @@
     layout: 'vertical'
 }
 
-'#textfieldsContainer[platform=ios]': {
-    keyboardDismissMode: Ti.UI.iOS.KEYBOARD_DISMISS_MODE_INTERACTIVE
-}
-
-"#calculatedEsr":{
-    font: {
-        fontSize: 40,
-        fontWeight: "bold"
-   },
-   width: Ti.UI.SIZE,       // Adjust the width as needed
-   height: Ti.UI.SIZE,      // Adjust the height as needed
-   textAlign: 'center',    // Center the label horizontally
-   top: 40,
-}
-
-'.textfield': {
+'.decimalValueInput[platform=ios]': {
+    keyboardType: Ti.UI.KEYBOARD_TYPE_DECIMAL_PAD,
+    hintText: 'Enter a positive decimal number',
     width: 300,
     top: 10,
     bubbleParent: false,
-}
-
-".textfield[platform=ios]": {
-    height: Ti.UI.SIZE,
+    height: 40,
     backgroundColor: '#f0f0f0',
     borderRadius: 4,
     padding: {
@@ -35,31 +19,28 @@
     }
 }
 
+
+
 '.textLabel': {
-    height: Ti.UI.SIZE,
-    width: Ti.UI.SIZE,
-    borderRadius: 4,
-    padding: {
-        left: 20,
-        right: 20,
-        top: 5,
-        bottom: 5
-    },
     font: {
         fontSize: 14,
         fontWeight: 'bold'
     },
+    width: Ti.UI.SIZE,
     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
     top: 20,
+    width: 300
 }
 
-'.decimalValueInput': {
-  keyboardType: Ti.UI.KEYBOARD_TYPE_DECIMAL_PAD,
-  hintText: 'Enter a positive decimal number',
-  font: {
-        fontSize: 12,
+
+
+"#calculatedEsr":{
+    font: {
+        fontSize: 40,
+        fontWeight: "bold"
    },
-   width: Ti.UI.SIZE,
-   textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
-   top: 20,
+   width: Ti.UI.SIZE,       // Adjust the width as needed
+   height: Ti.UI.SIZE,      // Adjust the height as needed
+   textAlign: 'center',    // Center the label horizontally
+   top: 40,
 }

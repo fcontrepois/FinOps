@@ -53,11 +53,6 @@
     top: 20,
 }
 
-/*
- * Different textfields based on different keyboard types. There are more
- * that can be found in the docs https://titaniumsdk.com/api/titanium/ui/textfield.html
- */
-
 '.decimalValueInput': {
   keyboardType: Ti.UI.KEYBOARD_TYPE_DECIMAL_PAD,
   hintText: 'Enter a positive decimal number',

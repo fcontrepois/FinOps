@@ -4,6 +4,7 @@
             <ListView id="listView" onItemclick="openComponent">
                 <ListSection>
 					<ListItem title="Effective Saving Rate calculator" itemId="esr" />
+					<ListItem title="Commitments information" itemId="commitments" />
 				</ListSection>
 			</ListView>
 		</Window>

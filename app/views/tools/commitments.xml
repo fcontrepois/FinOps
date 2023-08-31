@@ -1,0 +1,45 @@
+<Alloy>
+    <Window title="Commitments info" onFocus="elaborateCommitment">
+        <View layout="vertical" height="Ti.UI.SIZE">
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">    
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Starting date:"/>
+                <Picker id="datePicker" type="Ti.UI.PICKER_TYPE_DATE" datePickerStyle="Ti.UI.DATE_PICKER_STYLE_COMPACT" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" hintText="Commitment start date" onChange="elaborateCommitment"/>
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Number of months of the commitment:"/>
+                <TextField class="decimalValueInput" id="numberOfMonths" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment" value="12"/>
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Hourly list rate:"/>
+                <TextField class="decimalValueInput" id="listPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">    
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" top="30" text="Hourly discounted rate:"/>
+                <TextField class="decimalValueInput" id="discountedPrice" top="30" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" onChange="elaborateCommitment"/>
+            </View>
+
+
+
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Discount:"/>
+                <Label id="discountLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER"/>
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Duration in Hours:"/>
+                <Label id="durationLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Total saved (no wastage):"/>
+                <Label id="totalsavedLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER"/>
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="End date:"/>
+                <Label id="endDateLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+            </View>
+            <View layout="horizontal" height="Ti.UI.SIZE" left="30">
+                <Label textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" text="Breakeven date:"/>
+                <Label id="breakevenLabel" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+            </View>
+        </View>
+    </Window>
+</Alloy>
